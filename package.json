@@ -1,0 +1,13 @@
+{
+  "name": "bharat-blood-tracker",
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ..",
+    "dev": "concurrently \"cd backend && nodemon server.js\" \"cd frontend && npm run dev\"",
+    "seed": "cd backend && node utils/seed.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
